@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/mainimage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:scaleType="centerInside" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="30"
+        android:textColor="#DDDDDD"
+        android:text="Enter your weight"
+        android:layout_below="@id/mainimage"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="30"
+        android:textColor="#DDDDDD"
+        android:text="Enter your height"
+        android:layout_below="@id/weight"/>
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="30"
+        android:text="Enter your gender"
+        android:textColor="#DDDDDD"
+        android:layout_below="@id/height"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/enter"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/gender"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:layout_below="@id/enter"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
